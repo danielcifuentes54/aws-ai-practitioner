@@ -1,4 +1,6 @@
-# aws-ai-practitioner
+<img src="icons/AWS-AI.png" />
+
+# AWS AI Practitioner
 Repository to present to the AWS Medellin group relevant information to ace the AWS Certified AI Practitioner certification
 
 ## Fundamentals of AI and ML
