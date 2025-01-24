@@ -46,7 +46,31 @@ Inferecing is the process in which AI models make predictions or decisions using
 * Batch Inferecing (Sentiment analysis on social media post collected over a day)
   * SageMaker transforms jobs for applying models to datasets in AmazonS3
 
+### Data Types
 
+Data Types refer to the various forms in which data can be represented and processed by AI models. These include numerical, categorical, and unstrcutured data
+
+#### Categorical Data
+
+Categorical data refers to information that can be divied into categories or groups
+
+#### Types
+
+* Numerical Data
+* Raw Text Data (unstructured data)
+* Image Data
+* Audio Data (time series data)
+
+#### Labeled vs Unlabeled
+
+Labeled data contains both the input data and the corresponding output (target variable), while unlabeled data has only the input whithout the expected output
+
+* Labeled Data (used it in supervised learning)
+* unlabeled Data (used it in unsupervised learning)
+
+#### Imbalanced Data 
+
+Imbalanced data refers to datasets where on class (in classifications problems), has significantly more examples than the other(s). This can result in biased models that favor the dominant class.
 
 
 ## Fundamentals of Generative AI
