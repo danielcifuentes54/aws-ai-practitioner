@@ -141,7 +141,112 @@ Machine learning models are dynamic and require continous updates and retraining
 | **Mean Squared Error (MSE)**  | Squared differences between actual and predicted values | Continuous predictions where large errors are penalized more. |
 | **Business Metrics**          | Business-specific goals (e.g., revenue, cost savings, churn rate) | Evaluating the model’s direct impact on business outcomes. |
 
+### AI and ML Services on AWS
 
+* AI/ML - Service Categories:
+  - Pre-trained AI Services (Ready to Use)
+  - ML Platforms (Tools for custom ML model development)
+  - Infrastructure for custom AI (Training infrastructure, including GPU instances)
+
+#### AWS Glue
+
+* Fully managed extract, transform, and load (ETL) service (serverless ETL). It helps you prepare and integrate data from various sources for analytics, machine learning, and application development.
+* Uses a crawler to extract data and put it into  a data catalog, then we can have our own job to normalize, transform and then push the data to another datasource (Athena, Redshift, EMR) 
+* Glue DataBrew: No-code data preparation tool designed for business analysts, data analysts, and data scientists to clean and normalize data
+
+#### Amazon EMR (Elastic Map Reduce)
+
+* Managed platform that allows you to run big data frameworks (like Apache Hadoop and Apache Spark).
+* It is used on large-scale data analytics and machine learning
+* Full control over cluster size (there's also a serverless version)
+
+#### Amazon Bedrock: 
+
+* Fully managed service for foundation models that simplifies **Generative AI** application development.
+* Access to diverse foundation models.
+* Easy customization with your data
+* Seamless integration with AWS services
+* AWS Bedrock Guardrials: Limiter for bedrock to ensurethe model does not stray beyond you want it to do.
+* AWS Bedrock Agents: Automate complex tasks, Orchestrate workflows based on AI outputs, Enhance application capabilities
+
+#### Amazon SageMaker
+
+* Managed service to quickly buildind, training and deploying ML models, simplifying developmnet
+* Workflow:
+  - Data Ingestion: Amazon S3 integration
+  - Data preparation and Exploration: SageMaker Notebook and SageMaker Data Wrangler
+  - Model Training: SageMaker Training Jobs
+  - Model Avaluation and Tunning: Validation data and Automatic model tunning
+  - Model Deployment: SageMaker Endpoints
+* Features:
+  - Built-in algorithms and BYOA
+  - Integrated Jupyter Notebooks
+  - Distributed Training Jobs
+  - Automatic Model Tunning 
+  - SageMaker Studio (In browser IDE for ML)
+
+#### Amazon Recognition
+
+* Visual Analysis (images and videos) for object detection, facial analysis, and text recognition
+* Features:
+  - Object and Scene detection
+  - Facial Analysis and recognition
+  - Text in image
+  - Activity Detection
+  - Unsafe content Detection
+  - Celebrity Recognition
+  - Custom Labels
+  - Integration with other AWS Services
+  - Emotion Detection
+  - Real-time Analysis
+
+#### Amazon Lex
+
+* Enables building chatbots and virtual assistants using voice and text. It powers Amazon Alexa and supports AI-driven customer support
+* Features:
+  - Natural Language Understanding (NLU) and Automatic Speech Recognition (APR)
+  - Easy to Build
+  - Fully Managed
+  - Built-in Integrations
+  - Multi-channel support
+
+#### Amazon Poly
+
+* Voice-based system, to convert text to speech
+* Features:
+  - Lifelike speech
+  - Real-time streaming or file generation
+  - SSML support (control/configurate speech)
+  - Integration with other services (e.g lex, Lambda, s3)
+
+#### Amazon Transcribe
+
+* Voice-based system, to convert speech to text
+
+#### Amazon Comprehend
+
+* Understanding sentiment, intention, key phrases, important terms in text.
+
+#### Amazon Fraud Detector
+
+* Fully managed service which detects fraudelent activity
+* Categorization tool
+
+#### Amazon translate
+
+* Convert text from one language to another one
+
+#### Amazon Textract
+
+* OCR: Object Character Recognition, text extract from documents
+
+#### Amazon Augmented AI (Amazon A2I)
+
+* Allows you to integrate human review into machine learning (ML) workflows. It’s designed for use cases where AI-generated predictions need human validation
+
+#### Amazon QuickSight
+
+* Visualization tool with interactive dashboards that uses SPICE (superfast parallel in-memory calculation engine)
 
 ## Fundamentals of Generative AI
 
