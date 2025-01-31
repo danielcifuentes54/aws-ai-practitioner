@@ -250,7 +250,27 @@ Machine learning models are dynamic and require continous updates and retraining
 
 ## Fundamentals of Generative AI
 
-###
+### Why Generative AI?
+
+* Generative AI is transforming industries by creating new and original content.
+* it powers applications such as text generation, image creation, and more.
+* Business leverage generative AI to improve efficiency, personalization, and creativy.
+* It is a type of AI focused on creating new, original content.
+* AI generally predicts outcomes based on input data, while Generative AI focuses on producing new outputs that resemble the data it was trained on
+* Transformer Network: A neural network architecture that processes input in parallel
+* Context Window: The model's kind of memory span when it's generating text / Portion of input data that a model processes at a time
+* Tokens: Smallest units of data (e.g words or parts of words) 
+* Tokenization: The process of breaking down input into tokens
+* Embeddings and vectors: Numeric representation of words or phrases that capture their meaning, used to understand the relationships between tokens (words) 
+* Chunking: Used to handle large amounts of data by breaking it down into smaller, more manageable pieces called "chunks"
+* LLMs (Large Language Models): Generative AI models trained on vast models of text data e.g ChatGPT
+* Prompt Engineering: The input or instruction given to the model
+  - techniques: 
+    - Zero shot Learning: The AI recognizes something entirely new without any direct examples using descriptions or related knowledge.
+    - One-shot Learning: The Ai learns from just one example and can recognize  it in the future.
+    - Few-Shot Learning: the AI learns from a few examples and can generalize to recognize new instances.
+* Multimodal Models: Handle different types of data (e.g text, images, audio)
+* Diffusion Models: Mainly visual in nature, are used for generating high-quality images, audios, and video
 
 ## Applications of Foundational Models
 
