@@ -272,6 +272,59 @@ Machine learning models are dynamic and require continous updates and retraining
 * Multimodal Models: Handle different types of data (e.g text, images, audio)
 * Diffusion Models: Mainly visual in nature, are used for generating high-quality images, audios, and video
 
+### Uses cases and applications
+
+* Text generation
+* Summarization of long documents
+* Code generation and completion
+* 3D content creation
+* Extract Key information from unstructured data
+
+#### Architectures behind AI:
+
+* Generative Adversial Network (GAN): Great for high quality images generation
+* Variational Autoencoder (VAE): Great for unsupervised models
+* Transformers
+
+### Foundation Model Lifecycle
+
+* Structured AI project lifecycles ensure smooth transitions from concept to deployment, optimizing scalability
+1. Identify (Narrow Scope vs Broad Scope, Pre-Trained Models or Training From Scratch)
+2. Experiment (try different models, evaluate performance, select most suitable model)
+3. Adapt (Refine, prompt engineering, RLHF)
+4. Evaluate (evaluate with real world conditions)
+5. Deploy 
+6. Monitor
+* The role of prompt egineering:
+  - Guide the model with clear input for accurate results.
+  - Use examples to improve performance without extra training
+  - Enhance the model with supervised learning if needed
+* Reinforcement Learning From Human Feedback (RLHF): 
+  - Align model with human preferences
+  - Human Feedback fine-tunes model
+  - Ethical/Subjective considerations
+  - Minimizes toxic language and hallucinations
+  - Makes models more helpful, honest, and harmless
+
+### Generative AI Applications  - Capabilites and Limitations
+
+* Challenges:
+  - Limited Task Performance
+  - Ethical Considerations
+  - Risks in Sensitive Areas (Healthcare, Finance)
+  - Organizational Commitment (Prioritize ethics to ensure societal benefits)
+* Tracking Business Metrics With AI:
+  - Key Metrics: (Accuracy, Eficiency, Conversion Rate)
+  - Purpose of metrics: Asses AI value, Insights for Optimization
+  - Desired Outcome: Improve ROI, Align with business objectives
+
+### AWS Infrastructure for Building Gen AI Applications
+
+* Amazon SageMaker
+* Amazon Bedrock [Playground for Generative AI with Bedrock](https://partyrock.aws/)
+* Amazon Q
+
+
 ## Applications of Foundational Models
 
 ###
