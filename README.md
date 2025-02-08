@@ -347,6 +347,44 @@ Machine learning models are dynamic and require continous updates and retraining
 
 ### Selecting Pre-Trained Models
 
+* Mitigating Bias
+* Availability and Compability (Model repository, framework)
+* Model Maintenance and Updates
+* Customization (does it accept fine tunning? or just re-training)
+* Transparency (does the model show what it is doing?)
+  - Interpretabilit: it is about understanding how a model works internally.
+  - Explainability: it is about providing insights into why a model made a certain decision, even if the internal workings remain complex.
+* Hardware Constraints
+* Data Privacy Considerations
+  - Federated Learning: Enables AI models to learn from decentralized data sources without compromising privacy.
+* Transfer Learning
+
+### Inference Parameters
+
+* Parameters to control over model behavior and output characteristics
+* Common Inference Parameters:
+  - Temperature (Deterministic <> Creative)
+  - Top-K (Limits selection to a fixed number of tokens)
+  - Top-P (Dynamically adjusts the number of tokens considered based on probability distribution)
+  - Length (number of tokens (words) generated for the model)
+* Penalties and Stop Sequences:
+  - penalties: Stop repeating phrases
+  - Sequences: Stop sequences, useful for bullet lists
+
+### Retrieval Augmented Generation (RAG)
+
+* Enhances language models with external data, key for improving accuracy and relevance in AI tasks
+* How RAG Works:
+  - Retrieval: The system searches for relevant documents or information from a knowledge base (e.g., Wikipedia, private documents, APIs).
+  - Augmentation: The retrieved data is fed into a generative AI model as additional context.
+  - Generation: The AI generates a response based on both the retrieved documents and its own knowledge.
+* Challenges and Limitations of RAG:
+  - Require robus infrastructure
+  - Data privacy and security corncerns
+
+  
+
+
 ## Guidelines for Responsible AI
 
 ###
