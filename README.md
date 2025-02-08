@@ -327,7 +327,25 @@ Machine learning models are dynamic and require continous updates and retraining
 
 ## Applications of Foundational Models
 
-###
+### Design Considerations:
+
+* Cost Considerations:
+  - Simple Model: Acceptable accuracy lost --> Faster inference
+  - Complex Model: High accuracy --> Slow inference
+* Modality Considerations (types of input data a model can process): Text, Audio, Image 
+* Choose the Right Architecture: 
+  - Convolutional Neural Network CNNs (better for image recognition tasks)
+  - Recurrent Neural Network RNNs (better for natural language processing tasks)
+* Performance Metrics:
+  - Accuracy: Overall correctness → (True Positives + True Negatives) / Total Predictions.
+  - Precision: Correct positive predictions → True Positives / (True Positives + False Positives).
+  - Recall: Ability to find all positives → True Positives / (True Positives + False Negatives).
+  - F1 Score: Balance between precision & recall → 2 × (Precision × Recall) / (Precision + Recall).
+* Model Customization:
+  - Fine-tuning
+  - Pre-Training
+
+### Selecting Pre-Trained Models
 
 ## Guidelines for Responsible AI
 
