@@ -393,10 +393,17 @@ Machine learning models are dynamic and require continous updates and retraining
 
 ### Foundational Models Customization Approaches 
 
-* Pre-Training: High Flexibility
-* Fine-Tunning: Good Flexibility
+* Pre-Training: High Flexibility, General-purpose learning from unstructured data.
+* Fine-Tunning: Good Flexibility, critical to adapting a general-purpose-model to your **specific use cases**
+  - Avoid Catastrophic forgetting in Fine-Tunning
+    - PEFT Techniques (Parameter-Efficient Fine-Tunning):
+      - LoRA (Low-Rank Adaptation): Freezes original weights except for low-rank weights 
+      - ReFT (Representation Fine-Tunning): Modified model representations rather than weights
+    - Multitask Fine-Tunning: Models are trained on multiple tasks simultaneously
+    - Domain-Specific Fine-Tunning: is not a task specific tunning, helps to specialized models in fields (domains)
 * In-Context Learning: Limited Customization
 * RAG: Enhanced output with external data.
+* Continous Pre-Training: Essential for keeping foundational models current, relevant, and performing well in evolving environments
 
 ### Prompt Engineering 
 
@@ -428,6 +435,20 @@ Negative Prompt: Avoid mentioning aggression, excessive barking, or portraying t
   - Poisoning: Manipulation of model outputs by injecting biased or harmful data.
   - Hijacking: Unauthorized control over the prompt to alter intended responses.
   - Jailbreaking: Bypassing model restrictions to generate prohibited content.
+
+### Evaluating Foundational AI Models
+
+* Recall-Oriented Understudy for Gisting Evaluation (ROUGE):  Measures text summarization quality by comparing overlap with a reference.
+* Bilingual Evaluation Understudy (BLEU): Evaluates machine translation accuracy using n-gram overlap.
+* LLM Benchmarking: Assessing large language models on various tasks for performance comparison.
+* General Language Understanding Evaluation (GLUE): A benchmark for evaluating general NLP understanding across multiple tasks.
+* SuperGLUE: An improved version of GLUE with more challenging language tasks.
+* Massive Multitask Language Understanding (MMLUE): Tests language models on a diverse set of real-world, multitask evaluations.
+* Big Bench:  A large-scale benchmark covering diverse reasoning and knowledge tasks.
+* Holistic Evaluation of Language Models (HELM): A holistic framework for evaluating language models across fairness, bias, and performance.
+* SageMaker Clarify: Manual Evaluation
+* Amazon Bedrock - BERTScore: Provides an evaluation module that automatically compares generated responses
+
 
 
 ## Guidelines for Responsible AI
