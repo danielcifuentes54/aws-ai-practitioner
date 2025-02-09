@@ -352,7 +352,7 @@ Machine learning models are dynamic and require continous updates and retraining
 * Model Maintenance and Updates
 * Customization (does it accept fine tunning? or just re-training)
 * Transparency (does the model show what it is doing?)
-  - Interpretabilit: it is about understanding how a model works internally.
+  - Interpretability: it is about understanding how a model works internally.
   - Explainability: it is about providing insights into why a model made a certain decision, even if the internal workings remain complex.
 * Hardware Constraints
 * Data Privacy Considerations
@@ -449,11 +449,49 @@ Negative Prompt: Avoid mentioning aggression, excessive barking, or portraying t
 * SageMaker Clarify: Manual Evaluation
 * Amazon Bedrock - BERTScore: Provides an evaluation module that automatically compares generated responses
 
-
-
 ## Guidelines for Responsible AI
 
-###
+### Responsible AI - Features
+
+* Core Dimentions:
+  - Fariness: Equal treatment for users
+  - Explainability: Importance of explaining AI decisiones (e.g. loan rejection)
+  - Robustness: Stay accurate and reliable despite unexpected, noisy, or adversarial inputs
+  - Privacy and Security: Protecting user data
+  - Gorvernance: Legal compliance requeriments
+
+### Tools for Identifying Responsible AI Features
+
+* SageMaker Clarify: Identify bias during different stages of the ML project also enhance explainability, some features are:
+  - Bias detection during data preparation
+  - Bias detction after model training
+  - Explaining model decisions (transparency and explainability)
+* Amazon Bedrock for Guardrails: Security service that can limit or minimize outputs from a model
+  - Ensure your AI applications are safe and ethical
+
+### Legal Risks in Generative AI
+
+* Hallucination: when the model lies but is sounds really accurate
+* Legal Challenges, copyright
+* Bias: is a major issue, particulary in decision-making processes (e.g rejecting people in a hiring process because their age or gender)
+* Offensive and Innapropiate AI outputs: many times is because it was trained on inappropiate data (Guardrials is so appropiate for this).
+* Data Privacy and Security Risks: Sensitive information may appear in model outputs unintentionally
+
+### Dataset Characteristics and Bias
+
+* Balanced dataset matter in AI.
+  - Inclusive and Diverse Data Collection
+  - Data Curation (Labeling, Cleaning, Augmenting, Balancing)
+  - Data Processing Techniques (Cleaning, Normalization, Feature Selection)
+  - Data Augmentation for Balancing Datasets
+  - Regular Auditing for Fairness
+* SageMaker Clarify: 
+  - Helps identify and mitigate bias in data
+  - offer tools to explain models predictions
+  - Automates fairness and transparency checks
+* SageMaker Data Wrangler: 
+  - Helps to identify unbalanced datasets
+  - Provides tools for data cleaning and augmentation
 
 ## Security, Compliance, & Governance for AI solutions
 
