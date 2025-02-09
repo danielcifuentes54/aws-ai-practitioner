@@ -382,8 +382,21 @@ Machine learning models are dynamic and require continous updates and retraining
   - Require robus infrastructure
   - Data privacy and security corncerns
 
-  
+### Vector Databases on AWS
 
+* Store data as embeddings wich are numerical representations of data like text and images
+* OpenSearch for Generative AI
+* Amazon Aurora PostgreSQL support pgvector
+* Amazon Neptune ML (Graph Neural Network)
+* Vector Search for Amazon MemoryDB
+* Amazon DocumentDB (with MongoDB Compability)
+
+### Foundational Models Customization Approaches 
+
+* Pre-Training: High Flexibility
+* Fine-Tunning: Good Flexibility
+* In-Context Learning: Limited Customization
+* RAG: Enhanced output with external data.
 
 ## Guidelines for Responsible AI
 
