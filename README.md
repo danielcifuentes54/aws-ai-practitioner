@@ -398,6 +398,38 @@ Machine learning models are dynamic and require continous updates and retraining
 * In-Context Learning: Limited Customization
 * RAG: Enhanced output with external data.
 
+### Prompt Engineering 
+
+* Prompt ia an input provided by the user to guide an LLM.
+* Componentes of a prompt:
+  - Task
+  - Context
+  - Input Text (content, examples)
+* Negative Prompts: Guides the model to avoid certain responses or behaviors
+* Model's Latent Space: Representation of the data that a model has
+
+``` 
+Prompt Example:
+
+Task: Generate a fun and informative description of a Siberian Husky's personality.
+
+Context: Siberian Huskies are energetic, intelligent, and independent dogs known for their playful nature and strong-willed temperament. The description should highlight their friendly and mischievous side while keeping it engaging.
+
+Input Text: Woz, my Husky, loves running in the snow, howling at sirens, and outsmarting me when it's time for a bath. He’s both a lovable goofball and a master escape artist.
+
+Negative Prompt: Avoid mentioning aggression, excessive barking, or portraying the Husky as a dangerous or overly obedient dog. Keep the tone light and fun. 
+```
+
+* Zero-Shot Prompting: Prompt without example
+* One-Shot Prompting: Prompt with one example
+* Few-Shot Prompting: Prompt with numerous examples
+* Common Risks in Prompt Engineering (Amazon bedrock guardrails set limits for this):
+  - Exposure: Leakage of sensitive or private data due to poorly crafted prompts.
+  - Poisoning: Manipulation of model outputs by injecting biased or harmful data.
+  - Hijacking: Unauthorized control over the prompt to alter intended responses.
+  - Jailbreaking: Bypassing model restrictions to generate prohibited content.
+
+
 ## Guidelines for Responsible AI
 
 ###
