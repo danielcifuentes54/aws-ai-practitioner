@@ -493,6 +493,26 @@ Negative Prompt: Avoid mentioning aggression, excessive barking, or portraying t
   - Helps to identify unbalanced datasets
   - Provides tools for data cleaning and augmentation
 
+### Transparent and Explainable Models
+
+* Key Aspects of Transparency:
+  - Interpretability: 
+    - Simple models with clear rules
+    - How easily we can understand the mechanics of the model.
+    - Some industries require hogh level of interpretability (e.g finance, healthcare)
+  - Explainability: 
+    - Complex models viewed as black boxes
+    - Describing why a model produced a certain output without knowing how it works internally
+    - Neural Networks are not easily interpretable
+* AWS AI Transparency - Service Cards: 
+  - Provide to users with details about the model that they want to to use, available for recognition, textract, comprenhend 
+  - SageMaker Model Cards: allow to provide clear information about the model,its training, metrics and more to promote transparency.
+* Human-Centered-AI Prioritizing Human Needs:
+  - Involving users in AI design and development 
+  - Amazon Augmented AI (A2I): allow human review of AI predictions
+  - Amazon SageMaker Ground Truth: Incorporate human beings into the human loop learning (RLHF)
+* Amplified Decision Making: AI enhances human decision-making by providing insights, predictions, and automation.
+
 ## Security, Compliance, & Governance for AI solutions
 
 ###
