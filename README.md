@@ -463,7 +463,7 @@ Negative Prompt: Avoid mentioning aggression, excessive barking, or portraying t
 ### Tools for Identifying Responsible AI Features
 
 * SageMaker Clarify: Identify bias during different stages of the ML project also enhance explainability, some features are:
-  - Bias detection during data preparation
+  - Bias detection during data preparation (aspects to analyze: Data balance and group representation)
   - Bias detction after model training
   - Explaining model decisions (transparency and explainability)
 * Amazon Bedrock for Guardrails: Security service that can limit or minimize outputs from a model
@@ -515,5 +515,66 @@ Negative Prompt: Avoid mentioning aggression, excessive barking, or portraying t
 
 ## Security, Compliance, & Governance for AI solutions
 
-###
+### Securing AI Systems with AWS Services
 
+* AIM: Policies and Permissions, MFA
+* CloudTrail: For activity logging and auditing
+* S3 block public access
+* AWS Key Management Service (KMS)
+* PrivateLink: Enables private connections between VPCs and AWS or third-party services.
+  - VPC Endpoints → Allow VPCs to connect privately to AWS services, using either:
+    - Interface endpoints (use PrivateLink)
+    - Gateway endpoints (do not use PrivateLink, only for S3 & DynamoDB)
+* SageMaker Distributed Training - Inter-Node Encryption
+
+### Source Citation and Data Lineage
+
+* Machine Learning - Need for Tracking Artifacts (Reproducibility, Compliance, Regulatory Requirements):
+  - Source Code: Github
+  - Datasets: Amazon S3
+  - Container Images: ECR
+  - Model Artifacts: SageMaker Model Registry for Model Versioning
+* SageMaker Model Cards: Provide information about a model has its steps through lifecycle:
+  - Intended Uses
+  - Risk assessments 
+  - Training Details
+  - Evaluation Results
+* SageMaker Lineage Tracking: Create a graphical lineage of the workflow of the model
+* SageMaker Feature Store: Store features sets
+  - It also has feature lineage
+  - Data Cataloging 
+  - Point-in-time queries
+
+### Security and Privacy Considerations
+
+* Gen AI vulnerabilities:
+  - Data Poisoning: e.g altered images can bypass facial recognition models
+* Model Inversion and Reverse Engineering Threats
+* Prompt Injection Attacks 
+
+### Regulatory Compliance Standards fo AI Systems
+
+* Compliance standars safeguard: Business and Consumer
+* ISO:
+  - ISO 42001 - 2023: Managing Risks
+  - ISO 23894 - 2023: Being responsible with AI
+* EU AI act: Categorizes applications by risk
+* NIST RMF: Voluntary Framework for trustworthy AI
+* Algorithmic Accountability Act: Transparency in AI decisions
+
+### AWS Services for Governance and Compliance
+
+* AWS Artifact: Contains every single regulatory attestation and compliance that AWS has achieved globally
+* AWS Glue DataBrew: Data preparation for governance
+* AWS Lake Formation: Fine grained data access control
+* Amazon SageMaker Clarify: analyze what is going on the model, detecting bias
+* AWS Config: Configuration tracking
+* Amazon Inspector: Scanner for machine, containers, serverless check know CVEs
+* AWS Audit Manager: Collect information for auditing 
+* AWS cloudtrail: Activity Logging
+* AWS Trusted Advisor: Best Practices and Compliance Recommendations
+* AI Data Governance Strategies:
+  - Pilars:
+    - Availability
+    - Integrity
+    - Security
